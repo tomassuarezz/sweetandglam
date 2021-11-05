@@ -15,31 +15,37 @@
 </head>
 <body>
   
-      <header>
+  <div class="fondo">
+      <header class="row">
+        
     
           <nav class="navbar navbar-expand-lg navbar-light position-fixed Nav">
-            <img src="assets/logo.png" alt="logo" width="230" height="85" >
+            <img src="assets/logo.png" alt="logo" >
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
               <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Inicio</a>
+                <li class="nav-item ">
+                  <a class="nav-link" id="navColor" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Tienda</a>
+                  <a class="nav-link" id="navColor" href="pages/tienda.html">Tienda</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Recetas</a>
+                  <a class="nav-link" id="navColor" href="#">Cómo comprar</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link" id="navColor" href="#">Contacto</a>
                 </li>
               </ul>
             </div>
+            <div class="justify-content-end">
+              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i><span class="carrito-span">0</span></a>
+              
+            </div>
           </nav>
-
+        
           
         </header>
 
@@ -51,16 +57,17 @@
 
         <div class="row text-center" style="margin-bottom: 14px;">
           <div class="col-lg-4 col-xs-4">
-            <img class="drop" src="assets/cata1.webp" alt="torta">
+            <img class="drop" src="assets/cata1.webp" alt="torta" width="260px">
           </div>
           <div class="col-lg-4 col-xs-4">
-            <img class="drop" src="assets/cata3.jpg" alt="torta2" width="353" height="689">
+            <img class="drop" src="assets/cata3.jpg" alt="torta2" width="260px" height="507px">
           </div>
           <div class="col-lg-4 col-xs-4">
-            <img class="drop" src="assets/cata2.webp" alt="galletitas">
+            <img class="drop" src="assets/cata2.webp" alt="galletitas" width="260px">
           </div>
         </div>
 
+    </div>
       
   <div class="row paddingC bkColor">
     <div class="col-lg-12 col-xs-12 text-center ">
@@ -69,77 +76,220 @@
   </div>
 
   <div class="row paddingT bkColor">
-    <div class="col-lg-4 col-xs-4">
-      <div class="card mx-auto" style="width: 18rem;">
-        <img src="assets/card1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-        </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="product-grid mx-auto" style="width: 80%;">
+          <div class="product-image">
+              <a href="#" class="image">
+                  <img src="assets/cumpleañoschica-min.jpg">
+              </a>
+              
+              <a href="" class="add-to-cart">Agregar al carrito</a>
+              
+          </div>
+          <div class="product-content">
+              <h3 class="title"><a href="#">Torta Cumpleaños</a></h3>
+              <div class="price">$660.0 </div>
+          </div>
       </div>
-    </div>
-    <div class="col-lg-4 col-xs-4">
-      <div class="card mx-auto" style="width: 18rem;">
-        <img src="assets/card1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-        </div>
+  </div>
+  <div class="col-lg-4 col-sm-6">
+      <div class="product-grid mx-auto" style="width: 80%;">
+          <div class="product-image">
+              <a href="#" class="image">
+                  <img src="assets/chocolate-min.jpg">
+              </a>
+              
+              <a href="" class="add-to-cart">Agregar al carrito</a>
+          </div>
+          <div class="product-content">
+              <h3 class="title"><a href="#">Torta Chocolate</a></h3>
+              <div class="price">$780.0</div>
+          </div>
       </div>
-    </div>
-    <div class="col-lg-4 col-xs-4">
-      <div class="card mx-auto" style="width: 18rem;">
-        <img src="assets/card1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+  </div>
+  <div class="col-lg-4 col-sm-6">
+    <div class="product-grid mx-auto" style="width: 80%;">
+        <div class="product-image">
+            <a href="#" class="image">
+                <img src="assets/cheesecake.jpg">
+            </a>
+           
+            <a href="" class="add-to-cart">Agregar al carrito</a>
         </div>
-      </div>
+        <div class="product-content">
+            <h3 class="title"><a href="#">Cheese Cake</a></h3>
+            <div class="price">$650.0</div>
+        </div>
     </div>
+</div>
     
   </div>
 
   <div class="row paddingT bkColor">
-    <div class="col-lg-4 col-xs-4">
-      <div class="card mx-auto" style="width: 18rem;">
-        <img src="assets/card1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-        </div>
+    <div class="col-lg-4 col-sm-6">
+      <div class="product-grid mx-auto" style="width: 80%;">
+          <div class="product-image">
+              <a href="#" class="image">
+                  <img src="assets/lemonpie-min.jpg">
+              </a>
+              <a href="" class="add-to-cart">Agregar al carrito</a>
+          </div>
+          <div class="product-content">
+              <h3 class="title"><a href="#">Lemon Pie</a></h3>
+              <div class="price">$720.0 </div>
+          </div>
       </div>
-    </div>
-    <div class="col-lg-4 col-xs-4">
-      <div class="card mx-auto" style="width: 18rem;">
-        <img src="assets/card1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
-        </div>
+  </div>
+  <div class="col-lg-4 col-sm-6">
+      <div class="product-grid mx-auto" style="width: 80%;">
+          <div class="product-image">
+              <a href="#" class="image">
+                  <img src="assets/matilda-min.jpg">
+              </a>
+              
+              <a href="" class="add-to-cart">Agregar al carrito</a>
+          </div>
+          <div class="product-content">
+              <h3 class="title"><a href="#">Torta Matilda</a></h3>
+              <div class="price">$950.0</div>
+          </div>
       </div>
-    </div>
-    <div class="col-lg-4 col-xs-4">
-      <div class="card mx-auto" style="width: 18rem;">
-        <img src="assets/card1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Agregar al carrito</a>
+  </div>
+  <div class="col-lg-4 col-sm-6">
+    <div class="product-grid mx-auto" style="width: 80%;">
+        <div class="product-image">
+            <a href="#" class="image">
+                <img src="assets/cumpleañosfrutilla-min.jpg">
+            </a>
+            
+            <a href="" class="add-to-cart">Agregar al carrito</a>
         </div>
-      </div>
+        <div class="product-content">
+            <h3 class="title"><a href="#">Torta Frutilla</a></h3>
+            <div class="price">$850.0</div>
+        </div>
     </div>
+</div>
+</div>
+
+<div class="row ccColor">
+  <div class="col-lg-3 col-xs-12 logo__comprar text-center">
+    <img src="assets/logo.png" alt="">
+  </div>
+  <div class="col-lg-6 col-xs-12 comprar__instrucciones">
+    <h3>Cómo comprar en Sweet and Glam</h3>
+    <h4>Cualquier duda o consulta, contactate con nosotros!</h4>
+    <ul>
+      <li>Entra a la seccion tienda</li>
+      <li>Agrega tus productos al carrito</li>
+      <li>Cuando termines de elegir, ingresa al carrito y finaliza la compra</li>
+      <li>Completa tus datos de envio y metodo de pago</li>
+      <li>Te estaremos contactando en breve para hacer la entrega</li>
+    </ul>
+  </div>
+  <div class="col-lg-3 col-xs-12 logo__comprar text-center">
+    <img src="assets/logo.png" alt="">
+  </div>
+</div>
+
+
+<div class="row cColor">
+  <div class="col-lg-12">
+    <div class="container contact-form">
+      <div class="contact-image">
+          <img src="https://previews.123rf.com/images/clairev/clairev1008/clairev100800077/7722906-pastel-de-cumplea%C3%B1os-de-grandes-dibujos-animados-ilustraci%C3%B3n-vectorial-.jpg" alt="rocket_contact"/>
+      </div>
+      <form id="formulario">
+          <h3>Contacto Sweet & Glam</h3>
+         <div class="row">
+              <div class="col-md-6">
+                  <div class="form-group" id="divCampoNombre">
+                      <input type="text" name="txtName" class="form-control" id="txtNombre" placeholder="Nombre *" value="" />
+                  </div>
+                  <div class="form-group" id="divCampoEmail">
+                      <input type="text" name="txtEmail" class="form-control" id="txtEmail" placeholder="Email *" value="" />
+                  </div>
+                  <div class="form-group" id="divCampoAsunto">
+                      <input type="text" name="txtAsunto" class="form-control" id="txtAsunto" placeholder="Asunto *" value="" />
+                  </div>
+                  <div class="form-group">
+                      <button type="submit" name="btnSubmit" class="btnContact" id="enviar">Enviar</button>
+                  </div>
+              </div>
+              <div class="col-md-6">
+                  <div class="form-group" id="divCampoMensaje">
+                      <textarea name="txtMsg" class="form-control" id="txtMensaje" placeholder="Su mensaje *" style="width: 100%; height: 150px;"></textarea>
+                  </div>
+              </div>
+          </div>
+      </form>
+</div>
+  </div>
+</div>
+
+<footer>
+  <div class="row footerC">
+  <div class="col-lg-4 text-center fEstilos">
+    
+    <h3>Redes sociales</h3>
+    <hr>
+      <a href=""></a>
+        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+
+      
+   
+  </div>
+  <div class="col-lg-4 text-center fEstilos">
+    <h3>Medios de pago</h3>
+    <hr>
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" alt="visa" width="47" height="30">
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" alt="mastercard" width="47" height="30">
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" alt="amex" width="47" height="30">
+      <br>
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" alt="diners" width="47" height="30">
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" alt="ar_banelco" width="47" height="30">
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" alt="ar_cabal" width="47" height="30">
+      <br>
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" alt="ar_tarjeta-naranja" width="47" height="30">
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" alt="ar_tarjeta-shopping" width="47" height="30">
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" alt="mercadopago" width="47" height="30">
+      <br>
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" alt="ar_argencard" width="47" height="30">
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" alt="nativa" width="47" height="30">
+      <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" alt="ar_cencosud" width="47" height="30">
+
+      
+  </div>
+  <div class="col-lg-4 text-center">
+      <h3>Contacto</h3>
+      <hr>
+      <div class="fEstilos">
+        <i class="fas fa-mobile-alt fa-2x"></i>
+        <p>011 56984235</p>
+        <i class="far fa-envelope fa-2x"></i>
+        <p>sweetandglam@tortas.com.ar</p>
+      </div>
     
   </div>
+</div>
+
+<div class="row dCopy" style="background-color: #3d776c;">
+  <div class="col-lg-12 col-xs-12 text-center">
+    Diseñado por: Tomás Suarez
+  </div>
+</div>
+</footer>
+
   
 
 
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+  <script src="https://kit.fontawesome.com/62c6023b30.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+
+  <script src="js/main.js"></script>
+  </body>
 </html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Sweet&Glam</title>
+    <link rel="shortcut icon" href="../assets/favicon.png">
+</head>
+<body style="background: #E8DAEF;">
+  
+      <header>
+        
+    
+          <nav class="navbar navbar-expand-lg navbar-light position-fixed Nav">
+            <img src="../assets/logo.png" alt="logo" >
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" id="navColor" href="../index.html">Inicio</a>
+                </li>
+              </ul>
+            </div>
+            <div class="justify-content-end">
+              <a href="#"><i class="fas fa-shopping-cart fa-2x"></i><span class="carrito-span">0</span></a>
+              
+            </div>
+          </nav>
+        
+          
+        </header>
+
+        <div class="row titulo_inicio text-center">
+            <div class="col-lg-12 col-xs-12">
+            <h1 class="titulo__inicio--principal">Sweet & Glam</h1>
+            </div>
+        </div>
+
+        <div class="row text-center">
+            <div class="col-lg-12 col-xs-12 productos__titulo">
+                <h2>Nuestros productos</h2>
+            </div>
+        </div>
+
+<hr>
+
+        <!-- filtros yop -->
+        <div class="row filtros text-center">
+            <div class="col-lg-12 col-xs-12 filtros__opciones">
+                <span>  
+                    <button type="button" id="todos" class="btn btn-lg">Todos</button>
+                    <button type="button" id="tortas" class="btn btn-lg">Tortas</button>
+                    <button type="button" id="boxs" class="btn btn-lg">Box</button>
+                    <button type="button" id="variados" class="btn btn-lg">Variados</button>
+                </span>
+
+            </div>
+        </div>
+
+        
+
+        <!-- Productos -->
+
+        <div class="row producto__container">
+        </div>
+
+        <!-- Fin productos -->
+
+        <!-- contacto -->
+        <div class="row cColor">
+          <div class="col-lg-12">
+            <div class="container contact-form">
+              <div class="contact-image">
+                  <img src="https://previews.123rf.com/images/clairev/clairev1008/clairev100800077/7722906-pastel-de-cumplea%C3%B1os-de-grandes-dibujos-animados-ilustraci%C3%B3n-vectorial-.jpg" alt="rocket_contact"/>
+              </div>
+              <form id="formulario">
+                  <h3>Contacto Sweet & Glam</h3>
+                 <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group" id="divCampoNombre">
+                              <input type="text" name="txtName" class="form-control" id="txtNombre" placeholder="Nombre *" value="" />
+                          </div>
+                          <div class="form-group" id="divCampoEmail">
+                              <input type="text" name="txtEmail" class="form-control" id="txtEmail" placeholder="Email *" value="" />
+                          </div>
+                          <div class="form-group" id="divCampoAsunto">
+                              <input type="text" name="txtAsunto" class="form-control" id="txtAsunto" placeholder="Asunto *" value="" />
+                          </div>
+                          <div class="form-group">
+                              <button type="submit" name="btnSubmit" class="btnContact" id="enviar">Enviar</button>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group" id="divCampoMensaje">
+                              <textarea name="txtMsg" class="form-control" id="txtMensaje" placeholder="Su mensaje *" style="width: 100%; height: 150px;"></textarea>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+        </div>
+          </div>
+        </div>
+
+        <!-- fin contacto -->
+
+
+        <footer>
+            <div class="row footerC">
+            <div class="col-lg-4 text-center fEstilos">
+              
+              <h3>Redes sociales</h3>
+              <hr>
+                <a href=""></a>
+                  <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+                  <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+          
+                
+             
+            </div>
+            <div class="col-lg-4 text-center fEstilos">
+              <h3>Medios de pago</h3>
+              <hr>
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/visa@2x.png" alt="visa" width="47" height="30">
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mastercard@2x.png" alt="mastercard" width="47" height="30">
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/amex@2x.png" alt="amex" width="47" height="30">
+                <br>
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/diners@2x.png" alt="diners" width="47" height="30">
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/banelco@2x.png" alt="ar_banelco" width="47" height="30">
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cabal@2x.png" alt="ar_cabal" width="47" height="30">
+                <br>
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-naranja@2x.png" alt="ar_tarjeta-naranja" width="47" height="30">
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/tarjeta-shopping@2x.png" alt="ar_tarjeta-shopping" width="47" height="30">
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/mercadopago@2x.png" alt="mercadopago" width="47" height="30">
+                <br>
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/argencard@2x.png" alt="ar_argencard" width="47" height="30">
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/nativa@2x.png" alt="nativa" width="47" height="30">
+                <img src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" data-src="//d26lpennugtm8s.cloudfront.net/assets/common/img/logos/payment/new_logos_payment/ar/cencosud@2x.png" alt="ar_cencosud" width="47" height="30">
+          
+                
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3>Contacto</h3>
+                <hr>
+                <div class="fEstilos">
+                  <i class="fas fa-mobile-alt fa-2x"></i>
+                  <p>011 56984235</p>
+                  <i class="far fa-envelope fa-2x"></i>
+                  <p>sweetandglam@tortas.com.ar</p>
+                </div>
+              
+            </div>
+          </div>
+          
+          <div class="row dCopy" style="background-color: #3d776c;">
+            <div class="col-lg-12 col-xs-12 text-center">
+              Diseñado por: Tomás Suarez
+            </div>
+          </div>
+          </footer>
+          
+            
+          
+          
+          
+              <script src="https://kit.fontawesome.com/62c6023b30.js" crossorigin="anonymous"></script>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+              
+              
+              
+              <script src="../js/main.js"></script>
+            </body>
+          </html>
