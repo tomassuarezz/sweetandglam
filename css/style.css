@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300;1,400;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 header {
   display: flex;
   flex-direction: column;
@@ -11,9 +12,13 @@ header {
   background-size: 100% auto;
   padding-bottom: 8px; }
 
+li {
+  padding-left: 10px; }
+
 nav a {
-  font-weight: 300;
-  font-size: 24px;
+  font-family: 'Amatic SC', cursive;
+  font-size: 35px;
+  font-weight: 400;
   color: black; }
 
 #navColor {
@@ -36,7 +41,13 @@ nav a {
   border-radius: 50%; }
 
 .titulo__inicio--principal {
-  margin-top: 145px; }
+  margin-top: 145px;
+  font-size: 60px; }
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: underline; }
 
 .bkColor {
   background-color: wheat; }
@@ -353,6 +364,16 @@ nav a {
 .shopping-cart-total {
   min-height: 96px; }
 
+@media only screen and (max-width: 767px) {
+  .fondo {
+    background: #E8DAEF; }
+  .fotos__principal img {
+    padding: 10px; }
+  .comprarButton {
+    font-size: 18px;
+    position: relative;
+    right: 20px; } }
+
 body {
   margin: 0;
   padding: 0;
@@ -360,6 +381,7 @@ body {
   font-family: 'Nunito', sans-serif; }
 
 h1 {
+  font-family: 'Amatic SC', cursive;
   font-weight: 700;
   margin: 30px; }
 
@@ -372,6 +394,10 @@ hr {
   opacity: 0.5;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 .drop {
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.7)); }

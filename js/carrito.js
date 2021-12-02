@@ -16,6 +16,8 @@ function addToCartClicked(event) {
     const itemPrice = item.querySelector('.item-price').textContent;
     const itemImage = item.querySelector('.item-image').src;
      
+    
+
     addItemToShoppingCart(itemTitle, itemPrice, itemImage);
 }
 
@@ -31,7 +33,7 @@ function addItemToShoppingCart(itemTitle, itemPrice, itemImage) {
         }
     }
 
-
+   
 
 
     const shoppingCartRow = document.createElement('div');
@@ -108,9 +110,15 @@ function quantityChanged(event) {
 
 function comprarButtonClicked() {   
     shoppingCartItemsContainer.innerHTML = '';
-    Swal.fire(  
-        'Gracias por realizar su compra',
-        'Pronto recibira instrucciones para retirarlo'
-    )
+    const { value: okCarrito} = await = Swal.fire({ 
+        icon: 'success',
+        title : 'Gracias por realizar su compra! Ingrese su celular para comunicarnos',
+        input: 'text',
+        inputLabel: 'Ingrese su celular'
+    })
+    if (okCarrito) {    
+        Swal.fire(`${okCarrito}`)
+    }
+    
     updateShoppingCartTotal();
 }
